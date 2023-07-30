@@ -22,7 +22,7 @@ export default function Document() {
           rel="stylesheet"
         ></link>
 
-        <link href="/styles/tailwind.css" rel="stylesheet"></link>
+        <link href={`${process.env.PUBLIC_URL}/styles/tailwind.css`} rel="stylesheet"></link>
         {/* <script src="https://cdn.tailwindcss.com"></script>  */}
       </Head>
       <body>
