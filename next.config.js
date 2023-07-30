@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  basePath: '/',
+   basePath: "/codemenwebapp"
 }
  
-module.exports = nextConfig;
- 
+module.exports = nextConfig
