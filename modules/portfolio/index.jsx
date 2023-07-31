@@ -15,7 +15,7 @@ const Portfolio = () => {
               <span className="bg-[#04A367] text-[#ffffff] rounded-md px-6 align-text-bottom py-1"> Example </span>
               <div className="h-32 w-32 p-5 bg-white flex justify-center items-center font-bold text-[#01A165] rounded-xl">
                 <Image
-                  src={"/portfolio-icon-1.png"}
+                  src={"/codemenWebApp/portfolio-icon-1.png"}
                   width={200}
                   height={200}
                 />
@@ -41,7 +41,7 @@ const Portfolio = () => {
             <span className="bg-[#04A367] text-[#ffffff] rounded-md px-6 align-text-bottom py-1"> Example </span>
             <div className="h-32 w-32 p-5 bg-white flex justify-center items-center font-bold text-[#01A165] rounded-xl">
               <Image
-                src={"/portfolio-icon-2.png"}
+                src={"/codemenWebApp/portfolio-icon-2.png"}
                 width={1000}
                 height={1000}
               />

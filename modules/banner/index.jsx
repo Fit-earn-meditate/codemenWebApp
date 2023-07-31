@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="flex justify-around">
       <span>
         <Image
-          src="/banner.png"
+          src="/codemenWebApp/banner.png"
           alt="Banner Image"
           width={1100}
           height={300}

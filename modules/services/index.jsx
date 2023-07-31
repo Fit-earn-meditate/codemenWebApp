@@ -15,7 +15,7 @@ const Services = () => (
           <div>
             <span className="bg-[#01A165] inline-block h-20 w-20 flex justify-center items-center p-2 rounded-2xl">
               <Image
-                src={"/services-1.png"}
+                src={"/codemenWebApp/services-1.png"}
                 height={1000}
                 width={1000}
               />

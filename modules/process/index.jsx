@@ -10,7 +10,7 @@ const Process = () => (
       </div>
       <div className="flex justify-center mt-20">
         <Image
-          src={"/process.png"}
+          src={"/codemenWebApp/process.png"}
           width={1200}
           height={500}
         />
