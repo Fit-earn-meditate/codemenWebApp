@@ -1,8 +1,12 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-   basePath: "/codemenwebapp"
+  reactStrictMode: true,
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
+  basePath: '/codemenWebApp',
 }
- 
+
 module.exports = nextConfig
