@@ -1,7 +1,7 @@
-import Header from "../modules/header";
+// import Header from "../modules/header";
 import Footer from "../modules/footer";
 import Banner from "../modules/banner";
-import Process from "../modules/process";
+// import Process from "../modules/process";
 import Portfolio from "../modules/portfolio";
 import Services from "../modules/services";
 import Testimonial from "../modules/testimonial"
@@ -200,14 +200,14 @@ const App = () => {
   return (
     <div>
       <div>
-        <Header />
+        {/* <Header /> */}
       </div>
       <div id="main">
         <div>
           <Banner />
         </div>
         <div>
-          <Process />
+          {/* <Process /> */}
         </div>
         <div>
           <Services />

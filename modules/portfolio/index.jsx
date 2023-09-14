@@ -1,11 +1,17 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import Button from "../../components/buttons";
-import themeConfig from "../../config/theme.config"
+// import Button from "../../components/buttons";
+// import themeConfig from "../../config/theme.config"
 import { useState } from "react";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
+
+const Button = ({children}) => (
+  <button className="text-black">
+   {children}
+  </button>
+)
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

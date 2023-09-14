@@ -1,5 +1,12 @@
 import Image from "next/image";
-import Button from "../../components/buttons";
+// import Button from "../../components/buttons";
+
+
+const Button = ({children}) => (
+  <button className="text-black">
+   {children}
+  </button>
+)
 
 const Footer = () => (
   <section id="banner" className="container mx-auto pb-20">
