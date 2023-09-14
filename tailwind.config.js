@@ -1,17 +1,14 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
+  mode: 'jit',
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './public/**/*.html',
+    './pages/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+    './modules/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    container: {
+      padding: '2rem',
     },
     fontFamily: {
       'jetbrains': ['JetBrains Mono', 'Poppins'],
