@@ -1,5 +1,4 @@
 
-
 import "../styles/global.scss";
 
 // import { ErrorBoundary } from 'react-error-boundary';

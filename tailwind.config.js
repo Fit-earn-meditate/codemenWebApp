@@ -10,10 +10,10 @@ export default {
     container: {
       padding: '2rem',
     },
-    extend: {
-
-    }
-  },
-  variants: {},
-  plugins: [],
-};
+    fontFamily: {
+      'jetbrains': ['JetBrains Mono', 'Poppins'],
+    },
+    variants: {},
+    plugins: [],
+  }
+}

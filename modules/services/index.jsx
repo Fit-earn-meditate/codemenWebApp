@@ -3,13 +3,13 @@ import Image from "next/image";
 const Services = () => (
   <section id="services" className="container mx-auto py-20">
     <div className="text-center flex justify-center items-center flex-col">
-      <h2 className="text-5xl font-semibold text-[#01A165]">Services</h2>
+      <h2 className="text-5xl font-semibold text-[#44644a]">Services</h2>
       <div className="mt-2 px-20 text-[#7E7E7E] text-lg">
         <p>We Serve All Your Digital Needs</p>
       </div>
     </div>
 
-    <div className="grid grid-rows-2 grid-flow-col gap-12 mt-16 justify-center">
+    <div className={`grid grid-rows-2 grid-flow-row md:grid-flow-col gap-12 mt-16 justify-center`}>
       {[...Array(6)].map(() => (
         <div className="w-96 bg-[#E6F4EF] rounded-xl p-10 justify-center hover:scale-105">
           <div>
