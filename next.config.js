@@ -8,7 +8,7 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  basePath: '/codemenWebApp',
+  basePath: '',
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(new webpack.ProvidePlugin({
       $: 'jquery',
