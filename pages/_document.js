@@ -23,7 +23,7 @@ export default function Document() {
         ></link>
 
         <link href={`/codemenWebApp/styles/tailwind.css`} rel="stylesheet"></link>
-        {/* <script src="https://cdn.tailwindcss.com"></script>  */}
+        <script src="https://cdn.tailwindcss.com"></script> 
       </Head>
       <body>
         <Main />

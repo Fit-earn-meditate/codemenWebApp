@@ -16,7 +16,7 @@ const FAQs = () => {
   }, []);
 
   return (
-    <section className="mx-auto relative py-12">
+    <section className="mx-auto container relative py-12">
       <div>
         <Image
           src={`/codemenWebApp/faqs-bg.png`}

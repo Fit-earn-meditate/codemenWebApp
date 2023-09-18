@@ -2,7 +2,7 @@ const Enquiry = () => {
   return (
     <section
       id="enquery"
-      className="px-10 py-5"
+      className="px-10 py-5 mx-auto container"
     >
       <div className="text-[#ffffff] bg-[#67C3A0] flex justify-center py-10 px-20 overflow-hidden rounded-[60px]">
         <div className="flex space-x-8 items-center">
