@@ -71,9 +71,10 @@ const Testimonial = () => {
   const options = {
     loop: true,
     center: true,
-    items: 4,
-    margin: 0,
-    autoplay: true,
+    items: 3,
+    margin: 40,
+    autoplay: false,
+    autoWidth: false,
     dots: true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
@@ -83,22 +84,22 @@ const Testimonial = () => {
         items: 1
       },
       600: {
-        items: 2
+        items: 1
       },
       1000: {
-        items: 3
+        items: 1.5
       },
       1200: {
-        items: 3.5
+        items: 3
       },
       1390: {
-        items: 4
+        items: 3
       },
       1700: {
-        items: 5
+        items: 3
       },
       1900: {
-        items: 5.5
+        items: 4
       }
     }
   };
@@ -109,16 +110,16 @@ const Testimonial = () => {
   };
 
   return (
-    <section id="portfolio" className="py-24 bg-[#67C3A0] overflow-hidden relative">
+    <section id="testimonials" className="container mx-auto bg-[#67C3A0] overflow-hidden relative pt-14 pb-32">
       <Image
         src={`/codemenWebApp/testimonial-bg.png`}
         width={1200}
         height={1200}
         loading="lazy"
-        className="mx-auto relative top-4"
+        className="mx-auto absolute top-0 w-full p-28"
       />
-      <div className="absolute z-50 w-full top-0 left-0 py-14">
-        <div className="text-center flex justify-center items-center flex-col mb-20">
+      <div className="relative">
+        <div className="text-center flex justify-center items-center flex-col lg:mb-20 absolute w-full top-0">
           <h2 className="text-5xl font-semibold text-[#ffffff]">Testimonials</h2>
           <div className="mt-2 px-20 text-[#ffffff] text-lg w-[60rem]">
             <p>
@@ -128,11 +129,11 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible w-full">
+        <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible w-full scale-[0.8] relative top-28">
           <OwlCarousel ref={carouselRef} {...options} {...events} className="owl-carousel owl-theme">
             {testimonials &&
               testimonials.map((elm, i) => (
-                <li className={"opacity-1 inline-block"}>
+                <li className={"opacity-1 flex justify-center"}>
                   <div
                     id="card"
                     className="bg-[#F3FAF7] w-80 flex justify-center items-center flex-col text-center space-y-1 pt-5 pb-10 px-5 rounded-3xl"

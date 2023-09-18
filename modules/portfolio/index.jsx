@@ -7,9 +7,9 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 
-const Button = ({children}) => (
+const Button = ({ children }) => (
   <button className="text-black">
-   {children}
+    {children}
   </button>
 )
 
@@ -22,36 +22,35 @@ const Portfolio = () => {
     items: 3,
     margin: 40,
     autoplay: false,
-    autoWidth: true,
+    autoWidth: false,
     dots: true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
     nav: false,
-    // responsive: {
-    //   0: {
-    //     items: 1
-    //   },
-    //   600: {
-    //     items: 2
-    //   },
-    //   1000: {
-    //     items: 3
-    //   },
-    //   1200: {
-    //     items: 3.5
-    //   },
-    //   1390: {
-    //     items: 4
-    //   },
-    //   1700: {
-    //     items: 5
-    //   },
-    //   1900: {
-    //     items: 5.5
-    //   }
-    // }
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1.5
+      },
+      1200: {
+        items: 3
+      },
+      1390: {
+        items: 3
+      },
+      1700: {
+        items: 3
+      },
+      1900: {
+        items: 4
+      }
+    }
   };
-
   const data = [
     {
       title: "E- commerce Website",
@@ -77,18 +76,18 @@ const Portfolio = () => {
   ]
 
   return (
-    <section id="portfolio" className="py-20">
-      <div className="text-center flex justify-center items-center flex-col mb-20">
+    <section id="portfolio" className="container mx-auto">
+      <div className="text-center flex justify-center items-center flex-col mb-10">
         <h2 className="text-5xl font-semibold text-[#44644a]">Portfolio</h2>
         <div className="mt-2 px-20 text-[#7E7E7E] text-lg w-[60rem]">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, omnis Nesciuntpossimus quisquam tenetur, vitae,necessitatibus, modi accusantiumplaceat aliquam consectetur laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
 
-      <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible px-[6rem]">
+      <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible  scale-[0.8]">
         <OwlCarousel {...options}>
           {data && data.map((obj, i) =>
-            <li className={`${true ? "opacity-1 relative top-0" : "opacity-70"}`}>
+            <li className={`${true ? "opacity-1 relative top-0" : "opacity-70"} flex justify-center`}>
               <div id="card" className="bg-[#D7F4EA] w-80 flex justify-center items-center flex-col text-center space-y-8 py-10 px-5 rounded-3xl">
                 <span className="bg-[#04A367] text-[#ffffff] rounded-md px-6 align-text-bottom py-1"> Example </span>
                 {obj && obj.clientDetails && obj.clientDetails.logo ?
