@@ -91,12 +91,12 @@ export default () => {
 
   return (
     <section id="tech-stack h-[100vh]">
-      <div className="container mx-auto mt-[30px] mb-[80px]">
-        <div className="bg-gradient-to-r from-[#74FDC9CC] to-[#67C3A0]  rounded-[25px] p-20 flex flex-col justify-center items-center">
-          <h3 className="text-5xl font-semibold text-white mb-20">
+      <div className="lg:container mx-auto mt-[30px] mb-[80px]">
+        <div className="bg-gradient-to-r from-[#74FDC9CC] to-[#67C3A0]  rounded-[25px] p-5 lg:p-20 flex flex-col justify-center items-center">
+          <h3 className="text-5xl font-semibold text-white mb-20 text-center">
             Technologies We Work With
           </h3>
-          <ul className="flex space-x-10 text-white text-2xl mb-40">
+          <ul className="flex space-x-10 text-white text-2xl mb-40 w-full overflow-x-auto">
             {stack &&
               stack.map((obj, i) => (
                 <li
@@ -116,7 +116,7 @@ export default () => {
           </ul>
           <div>
             <ul
-              className={`flex space-x-20 w-[60em] overflow-x-auto justify-center items-center`}
+              className={`flex space-x-20 w-full lg:w-[60em] overflow-x-auto justify-center items-center`}
             >
               {stack[currentTabIndex].technologies.map((technology) => (
                 <li>

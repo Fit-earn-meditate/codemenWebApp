@@ -121,7 +121,7 @@ const Testimonial = () => {
       <div className="relative">
         <div className="text-center flex justify-center items-center flex-col lg:mb-20 absolute w-full top-0">
           <h2 className="text-5xl font-semibold text-[#ffffff]">Testimonials</h2>
-          <div className="mt-2 px-20 text-[#ffffff] text-lg w-[60rem]">
+          <div className="mt-2 px-20 text-[#ffffff] text-lg lg:w-[60rem]">
             <p>
               Customers rave about our exceptional service and solutions! Join us
               today for a remarkable experience.

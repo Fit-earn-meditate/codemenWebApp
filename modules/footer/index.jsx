@@ -3,7 +3,7 @@
 const Footer = () => (
   <footer className="flex flex-col justify-center bg-[#1E2F23] text-[#ffffff] w-full py-10">
     <div className="container mx-auto">
-      <div className="flex space-x-10 pb-10">
+      <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10">
         <div className="space-y-3">
           <div className="text-5xl">
             <a href="#" className="text-xl font-bold">
@@ -34,7 +34,7 @@ const Footer = () => (
             </div>
           </div>
         </div>
-        <div className="flex space-x-10">
+        <div className="flex flex-col lg:flex-row space-y-20 lg:space-y-0 lg:space-x-10 pb-10">
           <ul className="space-y-3">
             <li>Home</li>
             <li>About</li>

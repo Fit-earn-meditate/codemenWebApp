@@ -2,10 +2,10 @@ const Enquiry = () => {
   return (
     <section
       id="enquery"
-      className="px-10 py-5 mx-auto container"
+      className="px-0 lg:container py-5 mx-auto"
     >
-      <div className="text-[#ffffff] bg-[#67C3A0] flex justify-center py-10 px-20 overflow-hidden rounded-[60px]">
-        <div className="flex space-x-8 items-center">
+      <div className="text-[#ffffff] bg-[#67C3A0] flex justify-center py-10 px-5 lg:px-20 overflow-hidden rounded-none lg:rounded-[60px]">
+        <div className="flex flex-col lg:flex-row space-y-16 lg:space-x-8 items-center">
           <div className="">
             <h2 className="text-5xl font-bold mb-10">
               Accelerate Innovation with bespoken Tech Solutions
@@ -18,7 +18,7 @@ const Enquiry = () => {
             </div>
           </div>
           <div>
-            <div className="w-[500px] bg-[#ffffff] text-[#000000] py-10 px-10 rounded-lg">
+            <div className="w-auto lg:w-[500px] bg-[#ffffff] text-[#000000] py-10 px-10 rounded-lg">
               <h3 className="flex justify-start text-3xl font-bold mb-6">
                 Book a discovery call
               </h3>

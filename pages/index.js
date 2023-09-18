@@ -203,7 +203,7 @@ const App = () => {
       <div>
         {/* <Header /> */}
       </div>
-      <div id="main">
+      <div id="main" className="overflow-hidden">
         <div className="mb-10">
           <Header />
         </div>

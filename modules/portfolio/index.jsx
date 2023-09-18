@@ -79,7 +79,7 @@ const Portfolio = () => {
     <section id="portfolio" className="container mx-auto">
       <div className="text-center flex justify-center items-center flex-col mb-10">
         <h2 className="text-5xl font-semibold text-[#44644a]">Portfolio</h2>
-        <div className="mt-2 px-20 text-[#7E7E7E] text-lg w-[60rem]">
+        <div className="mt-2 px-20 text-[#7E7E7E] text-lg w-auto lg:w-[60rem]">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, omnis Nesciuntpossimus quisquam tenetur, vitae,necessitatibus, modi accusantiumplaceat aliquam consectetur laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Services = () => (
-  <section id="services" className="container mx-auto py-20">
+  <section id="services" className="lg:container mx-auto py-20">
     <div className="text-center flex justify-center items-center flex-col">
       <h2 className="text-5xl font-semibold text-[#44644a]">Services</h2>
       <div className="mt-2 px-20 text-[#7E7E7E] text-lg">

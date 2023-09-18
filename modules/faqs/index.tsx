@@ -28,7 +28,7 @@ const FAQs = () => {
         />
         <div className="py-16 z-[100]">
           <h1 className="text-5xl text-center">Frequently asked questions</h1>
-          <div className="space-y-3 px-64 mt-12">
+          <div className="space-y-3 lg:px-64 mt-12">
             {faqs &&
               faqs.map((faq, i) => (
                 <div className="border-1 border-b border-gray-300 py-4 text-2xl">

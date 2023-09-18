@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Button from "../../components/atoms/buttons";
 
-const Footer = () => (
-  <section id="banner" className="container mx-auto pb-20">
-    <div className="flex justify-around">
+const Banner = () => (
+  <section id="banner" className="lg:container mx-auto pb-20">
+    <div className="flex justify-around flex-col lg:flex-row gap-24 lg:gap-0">
       <span>
         <Image
           src="/codemenWebApp/banner.png"
@@ -12,9 +12,9 @@ const Footer = () => (
           height={300}
         />
       </span>
-      <div className="flex flex-col justify-center space-y-4 px-28">
+      <div className="flex flex-col justify-center space-y-4 px-5 lg:px-28 text-center lg:text-left">
         <div>
-          <span className="text-[#01A165] text-6xl font-bold">
+          <span className="text-[#01A165] text-6xl font-normal  brandLogo">
             <span className="text-[#c0f500]">Code</span> Banana
           </span>
         </div>
@@ -24,7 +24,7 @@ const Footer = () => (
             development services for growth and success.
           </p>
         </div>
-        <div className="space-x-5 flex mt-10">
+        <div className="space-x-6 flex mt-10 justify-center lg:justify-start">
           <Button backgroundColor={"#c0f500"} textColor={"#fff"}>
             Get a quote
           </Button>
@@ -37,4 +37,4 @@ const Footer = () => (
   </section>
 );
 
-export default Footer;
+export default Banner;
