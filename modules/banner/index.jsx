@@ -1,12 +1,5 @@
 import Image from "next/image";
-// import Button from "../../components/buttons";
-
-
-const Button = ({children}) => (
-  <button className="text-black">
-   {children}
-  </button>
-)
+import Button from "../../components/atoms/buttons";
 
 const Footer = () => (
   <section id="banner" className="container mx-auto pb-20">
@@ -19,24 +12,23 @@ const Footer = () => (
           height={300}
         />
       </span>
-      <div className="flex flex-col justify-center space-y-4 items-center text-center px-28">
+      <div className="flex flex-col justify-center space-y-4 px-28">
         <div>
           <span className="text-[#01A165] text-6xl font-bold">
-            {"<Codemen />"}
+            <span className="text-[#c0f500]">Code</span> Banana
           </span>
         </div>
         <div className="text-[#000000] text-lg">
-          <p>Empowering businesses with innovative software solutions. Expert development services for growth and success.</p>
+          <p>
+            Empowering businesses with innovative software solutions. Expert
+            development services for growth and success.
+          </p>
         </div>
-        <div className="space-x-5 flex">
-          <Button
-            textColor={"#01A165"}
-          >
+        <div className="space-x-5 flex mt-10">
+          <Button backgroundColor={"#c0f500"} textColor={"#fff"}>
             Get a quote
           </Button>
-          <Button
-            textColor={"#01A165"}
-          >
+          <Button textColor={"#fff"} backgroundColor={"#c0f500"}>
             See portfolio
           </Button>
         </div>

@@ -9,9 +9,9 @@ const Services = () => (
       </div>
     </div>
 
-    <div className={`grid grid-rows-2 grid-flow-row md:grid-flow-col gap-12 mt-16 justify-center`}>
+    <div className={`grid grid-rows-2 grid-flow-row md:grid-flow-col gap-12 mt-16 justify-center scale-[0.8]`}>
       {[...Array(6)].map(() => (
-        <div className="w-96 bg-[#E6F4EF] rounded-xl p-10 justify-center hover:scale-105">
+        <div className="w-96 bg-[#E6F4EF] rounded-xl p-10 justify-center hover:scale-105 hover:cursor-pointer">
           <div>
             <span className="bg-[#01A165] inline-block h-20 w-20 flex justify-center items-center p-2 rounded-2xl">
               <Image

@@ -1,7 +1,7 @@
-// import Header from "../modules/header";
+import Header from "../components/organisms/header";
 import Footer from "../modules/footer";
 import Banner from "../modules/banner";
-// import Process from "../modules/process";
+import Process from "../modules/process";
 import Portfolio from "../modules/portfolio";
 import Services from "../modules/services";
 import Testimonial from "../modules/testimonial"
@@ -9,6 +9,7 @@ import Inspiration from "../modules/inspiration";
 import Enquiry from "../modules/enquery";
 import FAQs from "../modules/faqs";
 import TechStack from "../modules/tech-stack";
+
 
 
 export async function getStaticProps() {
@@ -203,11 +204,14 @@ const App = () => {
         {/* <Header /> */}
       </div>
       <div id="main">
+        <div className="mb-10">
+          <Header />
+        </div>
         <div>
           <Banner />
         </div>
         <div>
-          {/* <Process /> */}
+          <Process />
         </div>
         <div>
           <Services />
