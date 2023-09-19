@@ -110,7 +110,7 @@ const Testimonial = () => {
   return (
     <section id="testimonials" className="container mx-auto bg-[#67C3A0] overflow-hidden relative pt-14 pb-32">
       <Image
-        src={`/codemenWebApp/testimonial-bg.png`}
+        src={`/testimonial-bg.png`}
         width={1200}
         height={1200}
         loading="lazy"
@@ -138,7 +138,7 @@ const Testimonial = () => {
                   >
                     <div className="h-20 w-20 flex justify-center items-center font-bold text-[#01A165] rounded-xl">
                       <Image
-                        src={`/codemenWebApp/${elm &&
+                        src={`/${elm &&
                           elm["authorInfo"] &&
                           elm["authorInfo"]["profileImage"]
                           }`}

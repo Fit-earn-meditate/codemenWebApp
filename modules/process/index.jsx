@@ -68,7 +68,7 @@ const Process = () => {
         <ul className="flex justify-center mt-20 space-x-6">
           <OwlCarousel ref={carouselRef} {...options} {...events} className="owl-carousel owl-theme">
             {/* <Image
-          src={"/codemenWebApp/process.png"}
+          src={"/process.png"}
           width={1200}
           height={500}
         /> */}

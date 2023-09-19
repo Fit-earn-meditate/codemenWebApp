@@ -13,7 +13,7 @@ const Enquiry = () => {
             <div className="text-xl">
               <p>
                 Get ahead of the competition with customized technology solutions
-                with Codemen
+                with Code Banana
               </p>
             </div>
           </div>

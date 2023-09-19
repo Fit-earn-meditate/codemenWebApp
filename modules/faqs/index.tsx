@@ -19,7 +19,7 @@ const FAQs = () => {
     <section className="mx-auto container relative py-12">
       <div>
         <Image
-          src={`/codemenWebApp/faqs-bg.png`}
+          src={`/faqs-bg.png`}
           alt=""
           width={400}
           height={400}

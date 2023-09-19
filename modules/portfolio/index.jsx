@@ -54,7 +54,7 @@ const Portfolio = () => {
       title: "E- commerce Website",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, omnis ?",
       clientDetails: {
-        logo: "/codemenWebApp/portfolio-icon-1.png"
+        logo: "/portfolio-icon-1.png"
       },
       technologies: ["HTML", "CSS", "React JS", "Bootstrap"]
     },

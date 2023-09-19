@@ -8,7 +8,7 @@ const Inspiration = () => {
           <span className="bg-[#67C3A0] block px-20 h-[300px] w-[400px]  rounded-tr-[15px] rounded-bl-[15px] rounded-br-[100px] rounded-tl-[100px]">
             <span className="relative bottom-14 z-100" />
             <Image
-              src={`/codemenWebApp/founder.png`}
+              src={`/founder.png`}
               width={1000}
               height={1000}
               loading="lazy"
@@ -27,7 +27,7 @@ const Inspiration = () => {
           </div>
           <div>
             <h4 className="text-[#7E7E7E] text-xl font-semibold">Aman Gupta</h4>
-            <span className="text-[#44644a] font-semibold text-md leading-[10px] block">Founder, Codemen</span>
+            <span className="text-[#44644a] font-semibold text-md leading-[10px] block">Founder, Code Banana</span>
           </div>
         </div>
       </div>
