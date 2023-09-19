@@ -10,8 +10,6 @@ import Enquiry from "../modules/enquery";
 import FAQs from "../modules/faqs";
 import TechStack from "../modules/tech-stack";
 
-
-
 export async function getStaticProps() {
   // fetch data and pass it as props
   // const data =  awaitfetch('http://127.0.0.1:8000/stepProcess/list').then(res => res.json());

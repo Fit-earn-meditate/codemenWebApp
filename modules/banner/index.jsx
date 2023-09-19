@@ -6,7 +6,7 @@ const Banner = () => (
     <div className="flex justify-around flex-col lg:flex-row gap-24 lg:gap-0">
       <span>
         <Image
-          src="/codemenWebApp/banner.png"
+          src="/banner.png"
           alt="Banner Image"
           width={1800}
           height={300}

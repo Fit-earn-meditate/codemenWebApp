@@ -96,7 +96,7 @@ export default () => {
           <h3 className="text-5xl font-semibold text-white mb-20 text-center">
             Technologies We Work With
           </h3>
-          <ul className="flex space-x-10 text-white text-2xl mb-40 w-full overflow-x-auto">
+          <ul className="flex space-x-10 text-white text-2xl mb-40 w-full overflow-x-auto justify-center">
             {stack &&
               stack.map((obj, i) => (
                 <li
