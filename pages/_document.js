@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Codemen Official</title>
+        <title>Web Development and Digital Marketing Agency <i>Crafting ideas into future Digitally</i> </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link
@@ -23,7 +23,7 @@ export default function Document() {
         ></link>
 
         <link href={`/codemenWebApp/styles/tailwind.css`} rel="stylesheet"></link>
-        <script src="https://cdn.tailwindcss.com"></script> 
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <body>
         <Main />

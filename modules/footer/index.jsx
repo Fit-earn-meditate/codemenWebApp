@@ -7,8 +7,8 @@ const Footer = () => (
         <div className="space-y-3">
           <div className="text-5xl">
             <a href="#" className="text-xl font-bold">
-              <span className="text-[#01A165] text-2xl font-bold">
-                <span className="text-[#c0f500]">Code</span> Banana
+              <span className="text-[#01A165] text-2xl font-normal brandLogo">
+                <span className="text-[#c0f500]">Code</span> Banana®
               </span></a>
           </div>
           <div className="text-[#7E7E7E]">Our Company gives the best solution!</div>
