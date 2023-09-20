@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="container mx-auto flex justify-between items-center px-4 py-4">
       <a href="#" className="text-xl">
-        <span className="text-[#01A165] text-4xl font-normal brandLogo">
+        <span className="text-[#01A165] text-3xl lg:text-5xl font-normal saturate-200 brandLogo">
           <span className="text-[#c0f500]">Code</span>Banana
         </span>
       </a>

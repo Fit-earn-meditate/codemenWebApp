@@ -7,10 +7,10 @@ const Enquiry = () => {
       <div className="text-[#ffffff] bg-[#67C3A0] flex justify-center py-10 px-5 lg:px-20 overflow-hidden rounded-none lg:rounded-[60px]">
         <div className="flex flex-col lg:flex-row space-y-16 lg:space-x-8 items-center">
           <div className="">
-            <h2 className="text-5xl font-bold mb-10">
+            <h2 className="text-5xl font-bold mb-10 text-center lg:text-left">
               Accelerate Innovation with bespoken Tech Solutions
             </h2>
-            <div className="text-xl">
+            <div className="text-xl text-center lg:text-left">
               <p>
                 Get ahead of the competition with customized technology solutions
                 with Code Banana
@@ -18,8 +18,8 @@ const Enquiry = () => {
             </div>
           </div>
           <div>
-            <div className="w-auto lg:w-[500px] bg-[#ffffff] text-[#000000] py-10 px-10 rounded-lg">
-              <h3 className="flex justify-start text-3xl font-bold mb-6">
+            <div className="w-auto lg:w-[500px] bg-[#ffffff] text-[#000000] py-10 px-5 lg:px-10 rounded-lg">
+              <h3 className="flex justify-start text-3xl font-bold mb-6 text-center lg:text-left">
                 Book a discovery call
               </h3>
               <form className="space-y-5">

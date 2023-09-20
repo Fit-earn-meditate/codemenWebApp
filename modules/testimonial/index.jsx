@@ -114,12 +114,12 @@ const Testimonial = () => {
         width={1200}
         height={1200}
         loading="lazy"
-        className="mx-auto absolute top-0 w-full p-28"
+        className="mx-auto absolute left-0 top-8 lg:top-0 w-full p-0 lg:p-28"
       />
       <div className="relative">
         <div className="text-center flex justify-center items-center flex-col lg:mb-20 absolute w-full top-0">
-          <h2 className="text-5xl font-semibold text-[#ffffff]">Testimonials</h2>
-          <div className="mt-2 px-20 text-[#ffffff] text-lg lg:w-[60rem]">
+          <h2 className="text-4xl lg:text-5xl font-semibold text-[#ffffff]">Testimonials</h2>
+          <div className="mt-2 px-0 lg:px-20 text-[#ffffff] text-lg lg:w-[60rem]">
             <p>
               Customers rave about our exceptional service and solutions! Join us
               today for a remarkable experience.
@@ -131,10 +131,10 @@ const Testimonial = () => {
           <OwlCarousel ref={carouselRef} {...options} {...events} className="owl-carousel owl-theme">
             {testimonials &&
               testimonials.map((elm, i) => (
-                <li className={"opacity-1 flex justify-center"}>
+                <li className={"opacity-1 flex justify-center hover:cursor-pointer"}>
                   <div
                     id="card"
-                    className="bg-[#F3FAF7] w-80 flex justify-center items-center flex-col text-center space-y-1 pt-5 pb-10 px-5 rounded-3xl"
+                    className="bg-[#F3FAF7] w-96 flex justify-center items-center flex-col text-center space-y-1 pt-5 pb-10 px-5 rounded-3xl"
                   >
                     <div className="h-20 w-20 flex justify-center items-center font-bold text-[#01A165] rounded-xl">
                       <Image

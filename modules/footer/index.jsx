@@ -1,14 +1,14 @@
 
 
 const Footer = () => (
-  <footer className="flex flex-col justify-center bg-[#1E2F23] text-[#ffffff] w-full px-6 py-10">
+  <footer className="flex flex-col justify-center bg-[#1E2F23] text-[#ffffff] w-full px-0 lg:px-6 py-10">
     <div className="container mx-auto">
       <div className="flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10">
         <div className="space-y-3">
-          <div className="text-5xl">
+          <div className="text-4xl lg:text-5xl">
             <a href="#" className="text-xl font-bold">
               <span className="text-[#01A165] text-2xl font-normal brandLogo">
-                <span className="text-[#c0f500]">Code</span> Banana®
+                <span className="text-[#c0f500]">Code</span> Banana ®
               </span></a>
           </div>
           <div className="text-[#7E7E7E]">Our Company gives the best solution!</div>

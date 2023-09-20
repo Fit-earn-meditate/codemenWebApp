@@ -4,7 +4,7 @@ const Inspiration = () => {
   return (
     <section id="inspiration" className="py-20 flex justify-center h-auto lg:h-[500px]">
       <div className="flex flex-col lg:flex-row w-auto lg:w-[1000px] space-y-10 lg:space-x-10">
-        <div>
+        <div className="pt-16">
           <span className="bg-[#67C3A0] block px-20 h-[300px] w-[400px]  rounded-tr-[15px] rounded-bl-[15px] rounded-br-[100px] rounded-tl-[100px]">
             <span className="relative bottom-14 z-100" />
             <Image
@@ -16,8 +16,8 @@ const Inspiration = () => {
             />
           </span>
         </div>
-        <div className="space-y-8 px-5 lg:px-0">
-          <h3 className="text-5xl text-[#04A367] font-bold leading-[50px] block">
+        <div className="space-y-8 px-5 lg:px-0 text-center lg:text-left">
+          <h3 className="text-4xl lg:text-5xl text-[#04A367] font-bold leading-[50px] block">
             It's Time for you to future proof your career!
           </h3>
           <div className="text-lg text-[#7E7E7E]">
