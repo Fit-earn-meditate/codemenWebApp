@@ -12,7 +12,7 @@ const Accordion = ({ title, children, isOpen = false, setIsOpen }) => {
   });
 
   return (
-    <div className="rounded-xl px-7 lg:px-10 py-4 bg-[#4bb133e8] text-[#fff]">
+    <div className="rounded-xl px-7 lg:px-10 py-4 bg-[#67C3A0] text-[#fff]">
       <div
         className="cursor-pointer flex justify-between items-center space-x-5 font-medium text-lg"
         onClick={() => setIsOpen(!isOpen)}
