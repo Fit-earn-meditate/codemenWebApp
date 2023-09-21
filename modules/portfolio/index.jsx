@@ -21,10 +21,12 @@ const Portfolio = () => {
     margin: 40,
     autoplay: false,
     autoWidth: false,
-    dots: true,
+    dots: false,
     autoplayTimeout: 8500,
     smartSpeed: 450,
-    nav: false,
+    nav: true,
+    navText: ["<i class='fa fa-chevron-left fa fa-chevron-left text-3xl absolute w-10 left-[-6px] text-black top-60 z-[900] bg-[#0000000d] rounded-xl p-2'></i>",
+      "<i class='fa fa-chevron-right fa fa-chevron-right fa fa-chevron-left text-3xl absolute w-10 right-[-6px] text-black top-60 z-[900] bg-[#0000000d] rounded-xl p-2'></i>"],
     responsive: {
       0: {
         items: 1
@@ -75,19 +77,19 @@ const Portfolio = () => {
   ]
 
   return (
-    <section id="portfolio" className="container mx-auto">
+    <section id="portfolio" className="lg:container mx-auto">
       <div className="text-center flex justify-center items-center flex-col mb-10">
         <h2 className="text-4xl lg:text-5xl font-semibold text-[#44644a]">Portfolio</h2>
         <div className="mt-2 px-0 lg:px-20 text-[#7E7E7E] text-lg w-auto lg:w-[60rem]">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, omnis Nesciuntpossimus quisquam tenetur, vitae,necessitatibus, modi accusantiumplaceat aliquam consectetur laudantium Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Our Creative Canvas, showcasing projects spanning various industries, showcasing our commitment to excellence and innovation in every endeavor</p>
         </div>
       </div>
 
-      <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible scale-[0.9] lg:scale-[0.8]">
+      <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible scale-[1] lg:scale-[0.8]">
         <OwlCarousel {...options}>
           {data && data.map((obj, i) =>
             <li className={`${true ? "opacity-1 relative top-0" : "opacity-70"} flex justify-center`}>
-              <div id="card" className="bg-[#D7F4EA] w-full lg:w-96 flex justify-center items-center flex-col text-center space-y-8 py-10 px-5 rounded-3xl">
+              <div id="card" className="bg-[#D7F4EA] w-[85%] lg:w-96 flex justify-center items-center flex-col text-center space-y-8 py-10 px-5 rounded-3xl">
                 <span className="bg-[#04A367] text-[#ffffff] rounded-md px-6 align-text-bottom py-1"> Example </span>
                 {obj && obj.clientDetails && obj.clientDetails.logo ?
                   <div className="h-32 w-32 p-5 bg-white flex justify-center items-center font-bold text-[#01A165] rounded-xl">

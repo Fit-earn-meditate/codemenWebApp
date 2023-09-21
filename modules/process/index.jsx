@@ -113,7 +113,7 @@ const Process = () => {
         </div>
         <ul className="flex justify-center mt-20 space-x-6">
           <OwlCarousel ref={carouselRef} {...options} {...events} className="owl-carousel owl-theme">
-            <li className="flex justify-center">
+            <li className="flex justify-center mb-5">
               <FlipCard title={"Ideate"}>
                 <FlipCardFrontContent>
                   <Lottie animationData={BrainIdea} loop={true} />
@@ -124,7 +124,7 @@ const Process = () => {
               </FlipCard>
             </li>
 
-            <li className="flex justify-center">
+            <li className="flex justify-center mb-5">
               <FlipCard title={"Design"}>
                 <FlipCardFrontContent>
                   <Lottie animationData={BusinessStrategy} loop={true} />
@@ -135,7 +135,7 @@ const Process = () => {
               </FlipCard>
             </li>
 
-            <li className="flex justify-center">
+            <li className="flex justify-center mb-5">
               <FlipCard title={"Engineering"}>
                 <FlipCardFrontContent>
                   <Lottie animationData={GearWeel} loop={true} />
@@ -146,7 +146,7 @@ const Process = () => {
               </FlipCard>
             </li>
 
-            <li className="flex justify-center">
+            <li className="flex justify-center mb-5">
               <FlipCard title={"Launch"}>
                 <FlipCardFrontContent>
                   <Lottie animationData={BusinessStartup} loop={true} />
@@ -157,7 +157,7 @@ const Process = () => {
               </FlipCard>
             </li>
 
-            <li className="flex justify-center">
+            <li className="flex justify-center mb-5">
               <FlipCard title={"Analysis"}>
                 <FlipCardFrontContent>
                   <Lottie animationData={AnalyticSearch} loop={true} />

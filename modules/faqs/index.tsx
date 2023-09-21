@@ -85,6 +85,10 @@ const FAQs = () => {
           <h1 className="text-4xl lg:text-5xl text-center">
             Frequently asked questions
           </h1>
+
+          <div className="mt-2 px-0 lg:px-20 text-[#7E7E7E] text-lg w-auto lg:w-[60rem] mx-auto">
+            Get quick answers to common queries about our services, processes, and more comprehensively !
+          </div>
           <ul className="space-y-3 lg:px-40 mt-12">
             {faqs &&
               faqs.map((faq, i) => (

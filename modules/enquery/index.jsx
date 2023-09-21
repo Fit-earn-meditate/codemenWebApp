@@ -44,9 +44,13 @@ const Enquiry = () => {
                 <div>
                   <select placeholder="Select Category" className="border-2 border-grey rounded-md w-full h-10 px-3">
                     <option defaultChecked={true} className="text-[red]">Select Category</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option>Engineering</option>
+                    <option>Design</option>
+                    <option>Content Writing</option>
+                    <option>Digital Marketing</option>
+                    <option>SEO</option>
+                    <option>Business Strategy Consultancy</option>
+                    <option>Social Media Management</option>
                   </select>
                 </div>
                 <div>

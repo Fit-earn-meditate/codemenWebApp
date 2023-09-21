@@ -71,7 +71,7 @@ const Testimonial = () => {
     center: true,
     items: 3,
     margin: 40,
-    autoplay: false,
+    autoplay: true,
     autoWidth: false,
     dots: true,
     autoplayTimeout: 8500,
@@ -108,33 +108,35 @@ const Testimonial = () => {
   };
 
   return (
-    <section id="testimonials" className="container mx-auto bg-[#67C3A0] overflow-hidden relative pt-14 pb-32">
-      <Image
+    <section id="testimonials" className="container mx-auto overflow-hidden relative pt-14 pb-32">
+      {/* <Image
         src={`/testimonial-bg.png`}
         width={1200}
         height={1200}
         loading="lazy"
         className="mx-auto absolute left-0 top-8 lg:top-0 w-full p-0 lg:p-28"
-      />
+      /> */}
+
+
       <div className="relative">
         <div className="text-center flex justify-center items-center flex-col lg:mb-20 absolute w-full top-0">
-          <h2 className="text-4xl lg:text-5xl font-semibold text-[#ffffff]">Testimonials</h2>
-          <div className="mt-2 px-0 lg:px-20 text-[#ffffff] text-lg lg:w-[60rem]">
+          <h2 className="text-4xl lg:text-5xl font-semibold text-[#44644a]">
+            Our Clients' Words, Our Inspiration</h2>
+          <div className="mt-2 px-0 lg:px-20 text-[#7E7E7E] text-lg w-auto lg:w-[60rem]">
             <p>
-              Customers rave about our exceptional service and solutions! Join us
-              today for a remarkable experience.
+              Hear from our clients as they share their experiences of successful outcomes.
             </p>
           </div>
         </div>
 
-        <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible w-full scale-[0.8] relative top-28">
+        <ul className="flex justify-center space-x-10 overflow-hidden md:overflow-visible w-full lg:scale-[0.8] relative top-48 lg:top-20">
           <OwlCarousel ref={carouselRef} {...options} {...events} className="owl-carousel owl-theme">
             {testimonials &&
               testimonials.map((elm, i) => (
-                <li className={"opacity-1 flex justify-center hover:cursor-pointer"}>
+                <li className={"opacity-1 flex justify-center hover:cursor-pointer pb-20"}>
                   <div
                     id="card"
-                    className="bg-[#F3FAF7] w-96 flex justify-center items-center flex-col text-center space-y-1 pt-5 pb-10 px-5 rounded-3xl"
+                    className="bg-[#F3FAF7] shadow-md w-96 flex justify-center items-center flex-col text-center space-y-1 pt-5 pb-10 px-5 rounded-3xl"
                   >
                     <div className="h-20 w-20 flex justify-center items-center font-bold text-[#01A165] rounded-xl">
                       <Image
@@ -147,7 +149,7 @@ const Testimonial = () => {
                       />
                     </div>
 
-                    <div className="font-semibold">
+                    <div className=" text-xl">
                       {elm && elm.authorInfo.authorName}
                     </div>
 
@@ -181,7 +183,7 @@ const Testimonial = () => {
                     </div>
 
                     <div>
-                      <span className="relative top-6">
+                      <span className="relative top-4">
                         <svg
                           width="21"
                           height="16"
@@ -195,7 +197,7 @@ const Testimonial = () => {
                           />
                         </svg>
                       </span>
-                      <div className="text-[#7E7E7E] pt-6">
+                      <div className="text-[#7E7E7E] pt-6 text-xl">
                         {elm && elm.comment}
                       </div>
                       <div>
