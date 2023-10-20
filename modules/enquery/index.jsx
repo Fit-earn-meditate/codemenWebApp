@@ -43,7 +43,7 @@ const Enquiry = () => {
                 </div>
                 <div>
                   <select placeholder="Select Category" className="border-2 border-grey rounded-md w-full h-10 px-3">
-                    <option defaultChecked={true} className="text-[red]">Select Category</option>
+                    <option defaultChecked={true} className="text-[green]">Select Category</option>
                     <option>Engineering</option>
                     <option>Design</option>
                     <option>Content Writing</option>
@@ -61,7 +61,12 @@ const Enquiry = () => {
                 </div>
 
                 <div>
-                  <button className="bg-[#67C3A0] border-2 rounded-md w-full h-10 px-10 text-center text-[#ffffff]">
+                  <button
+                    className="bg-[#67C3A0] border-2 rounded-md w-full h-10 px-10 text-center text-[#ffffff]"
+                    onClick={() => {
+                      
+                    }}
+                  >
                     Submit
                   </button>
                 </div>

@@ -3,68 +3,11 @@ import { useRef, useState } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 
-const Testimonial = () => {
+const Testimonial = ({ data: testimonials }) => {
+  console.log("testimonials", testimonials);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
-  const testimonials = [
-    {
-      id: "1",
-      serviceProvided: "UX Designing",
-      authorInfo: {
-        authorName: "Coca Cola",
-        profileImage: "profile1.png",
-      },
-      comment:
-        "I was very happy with the work that [project name] did on our website redesign. They were able to take our vision and turn it into a beautiful and functional website that has exceeded our expectations. We were especially impressed with their attention to detail and their willingness to go the extra mile. We would definitely recommend [project name] to anyone looking for a great web development team.",
-      rating: 4,
-    },
-    {
-      id: "2",
-      serviceProvided: "Web Application Development",
-      authorInfo: {
-        authorName: "SpaceX",
-        profileImage: "profile1.png",
-      },
-      comment:
-        "I was very happy with the work that [project name] did on our website redesign. They were able to take our vision and turn it into a beautiful and functional website that has exceeded our expectations. We were especially impressed with their attention to detail and their willingness to go the extra mile. We would definitely recommend [project name] to anyone looking for a great web development team.",
-      rating: 4,
-    },
-    {
-      id: "3",
-      serviceProvided: "Mobile Application Development",
-      author: "Walter Green",
-      authorInfo: {
-        authorName: "Tesla",
-        profileImage: "profile1.png",
-      },
-      comment:
-        "I was very happy with the work that [project name] did on our website redesign. They were able to take our vision and turn it into a beautiful and functional website that has exceeded our expectations. We were especially impressed with their attention to detail and their willingness to go the extra mile. We would definitely recommend [project name] to anyone looking for a great web development team.",
-      rating: 5,
-    },
-    {
-      id: "4",
-      serviceProvided: "UX Designing",
-      author: "Jolly White",
-      authorInfo: {
-        authorName: "Coca Cola",
-        profileImage: "profile1.png",
-      },
-      comment:
-        "I was very happy with the work that [project name] did on our website redesign. They were able to take our vision and turn it into a beautiful and functional website that has exceeded our expectations. We were especially impressed with their attention to detail and their willingness to go the extra mile. We would definitely recommend [project name] to anyone looking for a great web development team.",
-      rating: 4,
-    },
-    {
-      id: "5",
-      serviceProvided: "NFT",
-      authorInfo: {
-        authorName: "Pepsi",
-        profileImage: "profile1.png",
-      },
-      comment:
-        "I was very happy with the work that [project name] did on our website redesign. They were able to take our vision and turn it into a beautiful and functional website that has exceeded our expectations. We were especially impressed with their attention to detail and their willingness to go the extra mile. We would definitely recommend [project name] to anyone looking for a great web development team.",
-      rating: 4,
-    },
-  ];
+
 
   const options = {
     loop: true,
@@ -136,25 +79,23 @@ const Testimonial = () => {
                 <li className={"opacity-1 flex justify-center hover:cursor-pointer pb-20"}>
                   <div
                     id="card"
-                    className="bg-[#F3FAF7] shadow-md w-96 flex justify-center items-center flex-col text-center space-y-1 pt-5 pb-10 px-5 rounded-3xl"
+                    className="bg-[#F3FAF7] shadow-md w-96 flex justify-center items-center flex-col text-center space-y-5 pt-5 pb-10 px-5 rounded-3xl mb-10"
                   >
-                    <div className="h-20 w-20 flex justify-center items-center font-bold text-[#01A165] rounded-xl">
+                    <div className="h-20 w-20 flex justify-center items-center font-bold text-[#01A165] rounded-[1000px] bg-white">
                       <Image
-                        src={`/${elm &&
-                          elm["authorInfo"] &&
-                          elm["authorInfo"]["profileImage"]
-                          }`}
+                        className="rounded-[1000px]"
+                        src={`http://159.65.156.21:8000${elm.client_pic}`}
                         width={200}
                         height={200}
                       />
                     </div>
 
                     <div className=" text-xl">
-                      {elm && elm.authorInfo.authorName}
+                      {elm && elm.name || "Client"}
                     </div>
 
                     <div className="flex">
-                      {[...Array(5)].map(() => (
+                      {[...Array(Number((elm.rating - 1)|| 0))].map(() => (
                         <svg
                           width="29"
                           height="30"
@@ -198,7 +139,7 @@ const Testimonial = () => {
                         </svg>
                       </span>
                       <div className="text-[#7E7E7E] pt-6 text-xl">
-                        {elm && elm.comment}
+                        {elm && elm.description}
                       </div>
                       <div>
                         <svg

@@ -49,26 +49,18 @@ const Accordion = ({ title, children, isOpen = false, setIsOpen }) => {
           )}
         </button>
       </div>
-      <animated.div style={animation} className="overflow-hidden mt-4 text-lg text-[#fff299]">
+      <animated.div
+        style={animation}
+        className="overflow-hidden mt-4 text-lg text-[#fff299]"
+      >
         {children}
       </animated.div>
     </div>
   );
 };
 
-const FAQs = () => {
-  const [faqs, setFaqs] = useState([]);
-
-  useEffect(() => {
-    setFaqs(
-      [...Array(4)].map((_, i) => ({
-        id: i + 1,
-        title: "Lorem ipsum dolor sit amet consectetur ?",
-        response:
-          "Lorem ipsum dolor sit amet consectetur. In ornare et quis scelerisque posuere ac felis. Id aliquet at morbi vel vitae sed. Et egestas neque mattis gravida ornare maecenas libero sem. Massa pellentesque neque nisl congue feugiat eget. Aliquam commodo laoreet mauris ipsum. Aenean eros scelerisque elit vel odio lacus.",
-      }))
-    );
-  }, []);
+const FAQs = ({ data: faqs }) => {
+  const [currentIndex, setCurrentIndex] = useState(-1);
 
   return (
     <section className="mx-auto container relative py-12">
@@ -87,20 +79,25 @@ const FAQs = () => {
           </h1>
 
           <div className="mt-2 px-0 lg:px-20 text-[#7E7E7E] text-lg w-auto lg:w-[60rem] mx-auto">
-            Get quick answers to common queries about our services, processes, and more comprehensively !
+            Get quick answers to common queries about our services, processes,
+            and more comprehensively !
           </div>
           <ul className="space-y-3 lg:px-40 mt-12">
             {faqs &&
               faqs.map((faq, i) => (
                 <Accordion
                   setIsOpen={() => {
-                    faq.isOpen = !faq.isOpen;
-                    setFaqs([...faqs]);
+                    if (i === currentIndex) {
+                      setCurrentIndex(-1);
+                      return;
+                    } else {
+                      setCurrentIndex(i);
+                    }
                   }}
-                  isOpen={faq.isOpen}
-                  title={faq.title}>
-                  This is some content inside the accordion. You can place any
-                  content you want here!
+                  isOpen={i === currentIndex}
+                  title={faq.question}
+                >
+                  {faq.answer}
                 </Accordion>
               ))}
           </ul>

@@ -16,12 +16,12 @@ const Footer = () => (
             </div>
 
             <div className="mt-2">
-              <div className="mb-2">
+              <div className="mb-4">
                 <span>Address</span>
                 <div className="text-[#7E7E7E]">Address:</div>
               </div>
               <span>Contact</span>
-              <div className="flex justify-start space-x-2 items-center mb-2 mt-2">
+              <div className="flex justify-start space-x-2 items-center mb-4 mt-2">
                 <span>
                   <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.5569 10.906L12.1019 11.359C12.1019 11.359 11.0189 12.435 8.06386 9.49698C5.10886 6.55898 6.19186 5.48298 6.19186 5.48298L6.47786 5.19698C7.18486 4.49498 7.25186 3.36698 6.63486 2.54298L5.37486 0.859979C4.61086 -0.160021 3.13586 -0.29502 2.26086 0.57498L0.690856 2.13498C0.257856 2.56698 -0.032144 3.12498 0.002856 3.74498C0.092856 5.33198 0.810856 8.74498 4.81486 12.727C9.06186 16.949 13.0469 17.117 14.6759 16.965C15.1919 16.917 15.6399 16.655 16.0009 16.295L17.4209 14.883C18.3809 13.93 18.1109 12.295 16.8829 11.628L14.9729 10.589C14.1669 10.151 13.1869 10.28 12.5569 10.906Z" fill="white" />
@@ -30,7 +30,7 @@ const Footer = () => (
                 <div className="text-[#7E7E7E]">+91-9756232332</div>
               </div>
 
-              <div className="flex justify-start space-x-2 items-center mb-4">
+              <div className="flex justify-start space-x-3 items-center mb-4">
                 <span>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_290_3999)">
@@ -43,7 +43,8 @@ const Footer = () => (
                     </defs>
                   </svg>
                 </span>
-                <div className="text-[#7E7E7E]">info.fitearn@gmail.com</div>
+                <a href="mailto:info.fitearn@gmail.com?subject=Client%20Enquiry&body=Hello%2C%0A%0AI%20am%20reaching%20out%20to%20inquire%20about%20your%20services%20and%20products.%20I'm%20interested%20in%20learning%20more%20and%20would%20appreciate%20additional%20details%20and%20any%20relevant%20documentation%20or%20resources.%0A%0ACould%20we%20schedule%20a%20call%20or%20meeting%20to%20discuss%20further%3F%20Please%20let%20me%20know%20your%20availability.%0A%0AThank%20you%20for%20your%20time.%20I%20look%20forward%20to%20your%20response.%0A%0ABest%20regards%2C">info.fitearn@gmail.com</a>
+
               </div>
             </div>
 

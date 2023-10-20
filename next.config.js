@@ -8,6 +8,9 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ['159.65.156.21'],
+  },
   basePath: '',
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(new webpack.ProvidePlugin({

@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useRef } from "react";
+import axios from 'axios';
+
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 
 const options = {
@@ -44,8 +46,9 @@ const events = {
   onChanged: function (event) { },
 };
 
-const Services = () => {
-  const carouselRef = useRef(null);
+const Services = (props) => {
+  const { data: services } = props;
+  console.log("SERVICES", services);
   return (
     <section id="services" className="lg:container mx-auto py-20 lg:pb-10">
       <div className="text-center flex justify-center items-center flex-col">
@@ -58,21 +61,20 @@ const Services = () => {
       <ul
         className={`hidden lg:grid grid-rows-2 grid-flow-row md:grid-flow-col gap-12 mt-0 justify-center scale-[0.8]`}
       >
-        {[...Array(6)].map(() => (
-          <div className="w-96 h-96 bg-[#E6F4EF] rounded-xl p-10 justify-center hover:scale-105 hover:bg-[#ffd66c] text-[#7E7E7E] hover:text-[#4a5652] hover:cursor-pointer">
+        {services && services.map((obj) => (
+          <div className="w-96 min-h-96 h-[auto] bg-[#E6F4EF] rounded-xl p-10 justify-center hover:scale-105 hover:bg-[#ffd66c] text-[#7E7E7E] hover:text-[#4a5652] hover:cursor-pointer">
             <div>
               <span className="bg-[#01A165] inline-block h-20 w-20 flex justify-center items-center p-2 rounded-2xl">
-                <Image src={"/services-1.png"} height={1000} width={1000} />
+                <Image src={`http://159.65.156.21:8000${obj.icon}`} className="object-cover" height={100} width={100} />
               </span>
             </div>
             <div className="mt-16">
               <div>
-                <h2 className="font-bold text-2xl text-[#000]">Digital Marketing</h2>
+                <h2 className="font-bold text-2xl text-[#000]">{obj.name}</h2>
               </div>
               <div className=" font-md mt-2 text-xl">
                 <p>
-                  Comprehensive online strategies to promote brands, products, and
-                  services across digital platforms for maximum impact.
+                  {obj.description}
                 </p>
               </div>
             </div>
@@ -84,21 +86,20 @@ const Services = () => {
         className={`lg:hidden mt-14 px-5`}
       >
         <OwlCarousel carouselRef {...options} {...events} className="owl-carousel owl-theme">
-          {[...Array(6)].map(() => (
-            <li className="w-[90%] mx-auto h-[25rem] bg-[#E6F4EF] rounded-xl py-10 px-8 justify-center hover:cursor-pointer mb-5">
+          {services && services.map((obj) => (
+            <li className="w-[90%] mx-auto min-h-[25rem] h-[auto] bg-[#E6F4EF] rounded-xl py-10 px-8 justify-center hover:cursor-pointer mb-5">
               <div className="flex justify-center">
                 <span className="bg-[#01A165] inline-block h-20 w-20 flex justify-center items-center p-2 rounded-2xl">
-                  <Image src={"/services-1.png"} height={1000} width={1000} />
+                  <Image src={`http://159.65.156.21:8000${obj.icon}`} className="object-cover" height={100} width={100} />
                 </span>
               </div>
               <div className="mt-8">
                 <div>
-                  <h2 className="font-bold text-2xl text-center">Digital Marketing</h2>
+                  <h2 className="font-bold text-2xl text-center">{obj.name}</h2>
                 </div>
                 <div className="text-[#7E7E7E] font-md mt-2 text-lg text-center font-normal">
                   <p>
-                    Comprehensive online strategies to promote brands, products, and
-                    services across digital platforms for maximum impact.
+                    {obj.description}
                   </p>
                 </div>
               </div>
